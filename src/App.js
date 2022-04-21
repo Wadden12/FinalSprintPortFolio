@@ -5,7 +5,7 @@ import NavBar from "./UI/navbar";
 import { Routes, Route } from "react-router-dom";
 import Intro from "./components/intro";
 import About from "./components/about";
-import Projects from "./components/projects";
+import Projects from "./components/Projects/projects";
 import Contact from "./components/contact/contact";
 import Footer from "./UI/footer";
 
