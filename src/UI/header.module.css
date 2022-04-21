@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+.header {
+  font-size: 4.2vw;
+  color: rgba(228, 94, 76, 1);
+  line-height: 1;
+  text-align: center;
+  width: max-content;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  position: absolute;
+  top: 19%;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5rem;
+    top: 35%;
+  }
+}
