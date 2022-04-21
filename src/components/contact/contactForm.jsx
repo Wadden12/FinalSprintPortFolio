@@ -6,9 +6,17 @@ export const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [inquiry, setInquiry] = useState("");
-  const [nameIsValid, setNameIsValid] = useState(true);
-  const [emailIsValid, setEmailIsValid] = useState(true);
-  const [phoneIsValid, setPhoneIsValid] = useState(true);
+
+  const [nameIsTouched, setNameIsTouched] = useState(false);
+  const [emailIsTouched, setEmailIsTouched] = useState(false);
+  const [phoneIsTouched, setPhoneIsTouched] = useState(false);
+
+  const nameIsValid = name.trim() !== "";
+  const nameInputIsInvalid = !nameIsValid && nameIsTouched;
+  const emailIsValid = email.trim() !== "";
+  const emailInputIsInvalid = !emailIsValid && emailIsTouched;
+  const phoneIsValid = phone.trim() !== "";
+  const phoneInputIsInvalid = !phoneIsValid && phoneIsTouched;
 
   const nameChangeHandler = (e) => {
     setName(e.target.value);
@@ -23,41 +31,40 @@ export const ContactForm = () => {
     setInquiry(e.target.value);
   };
 
+  const nameOnBlurHandler = (e) => {
+    setNameIsTouched(true);
+  };
+  const emailOnBlurHandler = (e) => {
+    setEmailIsTouched(true);
+  };
+  const phoneOnBlurHandler = (e) => {
+    setPhoneIsTouched(true);
+  };
+
   const onSubmit = (event) => {
     event.preventDefault();
-    setPhoneIsValid(false);
-
-    if (phone.trim === "") {
-      setPhoneIsValid(false);
+    setNameIsTouched(true);
+    setEmailIsTouched(true);
+    setPhoneIsTouched(true);
+    if (!nameIsValid & !phoneIsValid & !emailIsValid) {
       return;
     }
-
-    setPhoneIsValid(true);
-
-    if (name.trim() === "") {
-      setNameIsValid(false);
-      return;
-    }
-    setNameIsValid(true);
-
-    if (email.trim() === "") {
-      setEmailIsValid(false);
-      return;
-    }
-    setEmailIsValid(true);
 
     setName("");
     setEmail("");
     setPhone("");
+    setNameIsTouched(false);
+    setPhoneIsTouched(false);
+    setEmailIsTouched(false);
   };
 
-  const nameInputClasses = nameIsValid
+  const nameInputClasses = !nameInputIsInvalid
     ? `${classes.control}`
     : `${classes.control} ${classes.invalid}`;
-  const emailInputClasses = emailIsValid
+  const emailInputClasses = !emailInputIsInvalid
     ? `${classes.control}`
     : `${classes.control} ${classes.invalid}`;
-  const phoneInputClasses = phoneIsValid
+  const phoneInputClasses = !phoneInputIsInvalid
     ? `${classes.control}`
     : `${classes.control} ${classes.invalid}`;
 
@@ -70,11 +77,12 @@ export const ContactForm = () => {
             <input
               id="name"
               type="text"
-              placeholder="Mike Wadden"
+              placeholder={!nameIsTouched ? "Mike Wadden" : ""}
               onChange={nameChangeHandler}
+              onBlur={nameOnBlurHandler}
               value={name}
             ></input>
-            {!nameIsValid && (
+            {nameInputIsInvalid && (
               <p className={classes["error-text"]}>Name must not be empty</p>
             )}
           </div>
@@ -83,11 +91,12 @@ export const ContactForm = () => {
             <input
               id="email"
               type="email"
-              placeholder="mikewadden12@gmail.com"
+              placeholder={!emailIsTouched ? "mikewadden12@gmail.com" : ""}
               onChange={emailChangeHandler}
+              onBlur={emailOnBlurHandler}
               value={email}
             ></input>
-            {!emailIsValid && (
+            {emailInputIsInvalid && (
               <p className={classes["error-text"]}>Email must not be empty</p>
             )}
           </div>
@@ -96,11 +105,12 @@ export const ContactForm = () => {
             <input
               id="phone"
               type="tel"
-              placeholder="709-687-5085"
+              placeholder={!phoneIsTouched ? "709-687-5085" : ""}
               onChange={phoneChangeHandler}
+              onBlur={phoneOnBlurHandler}
               value={phone}
             ></input>
-            {!phoneIsValid && (
+            {phoneInputIsInvalid && (
               <p className={classes["error-text"]}>Phone must not be empty</p>
             )}
           </div>
