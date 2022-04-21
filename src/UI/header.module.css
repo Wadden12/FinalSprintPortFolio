@@ -7,14 +7,11 @@
   width: max-content;
   font-family: "Shadows Into Light", cursive;
   margin: 0;
-  position: absolute;
-  top: 19%;
-  width: 60%;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .header {
     font-size: 1.5rem;
-    top: 35%;
   }
 }

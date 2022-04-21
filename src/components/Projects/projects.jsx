@@ -3,6 +3,7 @@ import classes from "./projects.module.css";
 import ProjectHeader from "./projectHeader";
 import ProjectSummary from "./projectSummary";
 import { Outlet } from "react-router-dom";
+import Card from "../../UI/card";
 
 const projectATitle = "Expense Tracker";
 const projectABody = (
@@ -97,7 +98,13 @@ const Projects = () => {
       {showProjectA && (
         <ProjectSummary title={projectATitle} body={projectABody} />
       )}
-      <div>{showProjectA && <Outlet />}</div>
+      <div className={classes.block1}>
+        {showProjectA && (
+          <Card>
+            <Outlet />
+          </Card>
+        )}
+      </div>
       {showProjectB && (
         <ProjectSummary title={projectBTitle} body={projectBBody} />
       )}
