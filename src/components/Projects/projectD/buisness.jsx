@@ -10,41 +10,41 @@ const Buisness = () => {
 
       <div className={classes.containerList}>
         <ul className={classes.list}>
-          <li className={classes.listItem}>Managed a team of 30 employee's</li>
+          <li className={classes.listItem}>Managed a team of 30 employees</li>
           <li className={classes.listItem}>
             Purchasing: was responsible for managing the Coca Cola line worth
             over 50% of the companies sales
           </li>
           <li className={classes.listItem}>
-            Maintained a 95% Service Leveling as the Coca Cola divison buyer
+            Maintained a 95% Service Level as the Coca Cola divison buyer
           </li>
           <li className={classes.listItem}>
-            after taking over as operations manager in one year reduced
+            After taking over as operations manager in one year reduced
             warehouse overtime cost by 50%.
           </li>
           <li className={classes.listItem}>
-            Saved the company over $70,000 by reducing the fleet by one truck
-            acheive through design of new efficent trucks runs.
+            Saved the company over $70,000 annually by reducing the fleet by one
+            truck, acheived through design of new efficent trucks runs.
           </li>
           <li className={classes.listItem}>
-            Sucessfully planned a executed a logistics plan for a terroirty a
+            Sucessfully planned a executed a logistics plan for a terroirty
             expansion to the West Coast of Newfoundland Labrador.
           </li>
           <li className={classes.listItem}>
-            implemented picking procedures to greatly reduce the amount of erros
-            made and increase picking speed
+            Implemented picking procedures to greatly reduce the amount of
+            errors made and increase picking speed
           </li>
           <li className={classes.listItem}>
-            Switch the company from a paper based sales for to completely
-            digital by created digital sales sheets.
+            Switch the company from a paper based sales to completely digital by
+            creating digital sales sheets.
           </li>
           <li className={classes.listItem}>
-            consistantly year over year reduced the overcost of the companies
-            transportation logistics and warehouse operating cost by managinig
-            the workflow.
+            Consistantly year-over-year reduced the overhead cost of the
+            companies transportation logistics and warehouse operating cost by
+            managing the workflow.
           </li>
           <li className={classes.listItem}>
-            reorganized the warehouse increasing the available primary locations
+            Reorganized the warehouse increasing the available primary locations
             by 30%. Allowing for the company to take on new products lines.
           </li>
         </ul>
