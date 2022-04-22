@@ -1,0 +1,67 @@
+.icon {
+  width: 40px;
+  height: 40px;
+  padding-left: 0.5rem;
+  display: inline-block;
+}
+
+.collapsibleHeader {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.collapsibleHeading {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #0dafbf;
+}
+
+.collapsibleChevron {
+  transform: rotateZ(90deg) translateY(-0.25rem);
+  transition: transform 0.3s;
+}
+
+.collapsibleContent {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  color: #0dafbf;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.collapsibleExpanded .collapsibleChevron {
+  transform: rotate(0);
+}
+
+.collapsibleExpanded .collapsibleContent {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.nav__item > a {
+  color: #0dafbf;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav__item > a:hover {
+  color: #ff6863;
+}
+
+.links li {
+  padding-top: 0.25rem;
+}
+.links li:hover {
+  color: #ff6863;
+}

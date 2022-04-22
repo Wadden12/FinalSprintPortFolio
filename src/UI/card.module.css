@@ -7,3 +7,9 @@
   margin: 0.5rem 7%;
   position: relative;
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+}

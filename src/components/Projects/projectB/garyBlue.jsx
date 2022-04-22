@@ -1,6 +1,8 @@
 import React from "react";
 import orderMenu from "../../../Images/ordermenu.png";
 import cartMenu from "../../../Images/cartMenu.png";
+import auth from "../../../Images/auth.png";
+import banner from "../../../Images/OnlineOrdering.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
@@ -18,8 +20,8 @@ const GaryBlue = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <span className={classes.icon}>{githubIcon}</span> Click the see the
-        Full Project
+        <span className={classes.icon}>{githubIcon}</span> Click To See The Full
+        Project
       </a>
 
       <div
@@ -59,7 +61,7 @@ const GaryBlue = () => {
           <h3>Authentication</h3>
           <img
             className={classes.image}
-            src={cartMenu}
+            src={auth}
             alt="Gary Blue's Created order Menu"
           />
           <p className={classes.blockBody}>
@@ -67,6 +69,18 @@ const GaryBlue = () => {
             then login in with their username and password. All user information
             then stored on firebase system.
           </p>
+          <div className={classes.block}>
+            <h3>Graphics</h3>
+            <img
+              className={classes.image}
+              src={banner}
+              alt="Gary Blue's Created order Menu"
+            />
+            <p className={classes.blockBody}>
+              Created the extra graphics on the site including the logo and web
+              banners.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,44 @@
+.imgProfile {
+  width: auto;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.cardHeader,
+.cardBody {
+  padding: 2rem 7%;
+}
+
+.cardPrimary .cardHeader {
+  background: #0f556b;
+  color: #fff;
+}
+
+.cardSecondary .cardHeader {
+  background: #0dafbf;
+  color: #fff;
+}
+
+.cardHeader {
+  font-size: 2rem;
+}
+.cardBody {
+  font-size: 1.5rem;
+}

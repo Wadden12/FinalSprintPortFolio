@@ -28,7 +28,7 @@
 }
 
 .block {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .mainBlock {
   margin-top: 1rem;
@@ -60,13 +60,13 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .github {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .block {
+    margin-right: 0;
   }
 }
