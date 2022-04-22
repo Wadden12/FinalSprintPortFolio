@@ -48,7 +48,10 @@ const projectCBody = (
 const projectDTitle = "Buisness Management";
 const projectDBody = (
   <React.Fragment>
-    <p>I have over 10 yeras of management expeince working in operations.</p>
+    <p>
+      I have over 10 yeras of management expeince working in operations and
+      purchasing.
+    </p>
     <p>
       While this does not count as a actually software program. I feal that
       management work experince and knowledge will make me a great asset for
@@ -95,6 +98,7 @@ const Projects = () => {
         onClickProjectC={projectCHandler}
         onClickProjectD={projectDHandler}
       />
+
       {showProjectA && (
         <ProjectSummary title={projectATitle} body={projectABody} />
       )}
@@ -109,10 +113,10 @@ const Projects = () => {
         <ProjectSummary title={projectBTitle} body={projectBBody} />
       )}
 
-      <div>
+      <div className={classes.block1}>
         {showProjectB && (
           <Card>
-            <Outlet />{" "}
+            <Outlet />
           </Card>
         )}
       </div>
@@ -120,11 +124,23 @@ const Projects = () => {
       {showProjectC && (
         <ProjectSummary title={projectCTitle} body={projectCBody} />
       )}
-      <div>{showProjectC && <Outlet />}</div>
+      <div>
+        {showProjectC && (
+          <Card>
+            <Outlet />
+          </Card>
+        )}
+      </div>
       {showProjectD && (
         <ProjectSummary title={projectDTitle} body={projectDBody} />
       )}
-      <div>{showProjectD && <Outlet />}</div>
+      <div>
+        {showProjectD && (
+          <Card>
+            <Outlet />
+          </Card>
+        )}
+      </div>
     </React.Fragment>
   );
 };
