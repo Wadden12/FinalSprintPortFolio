@@ -108,7 +108,15 @@ const Projects = () => {
       {showProjectB && (
         <ProjectSummary title={projectBTitle} body={projectBBody} />
       )}
-      <div>{showProjectB && <Outlet />}</div>
+
+      <div>
+        {showProjectB && (
+          <Card>
+            <Outlet />{" "}
+          </Card>
+        )}
+      </div>
+
       {showProjectC && (
         <ProjectSummary title={projectCTitle} body={projectCBody} />
       )}

@@ -1,0 +1,72 @@
+.github {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  background-color: #ff6863;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.icon {
+  padding-right: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 30px;
+  border: 8px solid #ff6863;
+  display: inline-block;
+}
+
+.block {
+  margin-right: 1rem;
+}
+.mainBlock {
+  margin-top: 1rem;
+}
+
+.block h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fddf62;
+  margin: 0 0 1rem;
+}
+.grid {
+  display: grid;
+}
+
+.blockBody {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  border: 3px solid #ff6863;
+  color: #0dafbf;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .github {
+    font-size: 1.5rem;
+  }
+}
