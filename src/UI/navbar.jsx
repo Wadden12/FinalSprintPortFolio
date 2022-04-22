@@ -24,16 +24,11 @@ const NavBar = () => {
           {bar}
         </span>
 
-        {!isActive && (
+        {isActive && (
           <div className={classes.navbar}>
             <ul
               className={`${classes.nav__list} ${classes.collaspsible__content}`}
             >
-              <li className={classes.nav__item}>
-                <NavLink aria-current="page" to="/intro">
-                  Intro
-                </NavLink>
-              </li>
               <li className={classes.nav__item}>
                 <NavLink to="/about">About</NavLink>
               </li>

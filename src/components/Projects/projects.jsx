@@ -12,7 +12,7 @@ const projectABody = (
       Expense tracker was the first simple applicaiton i completed with react.
     </p>
     <p>
-      This applications allows the user to add expense and sort the data by
+      This applications allows the user to add expenses and sort the data by
       year.
     </p>
   </React.Fragment>
@@ -21,13 +21,13 @@ const projectBTitle = "Gary Blue's";
 const projectBBody = (
   <React.Fragment>
     <p>
-      As part of team we created a website for Gary Blue's Dinner useing React.
+      As part of a team we created a website for Gary Blue's Dinner useing
+      React.
     </p>
     <p>
-      I worked on the authnication part of site to allow the user to log in and
-      implemented a function cart so a customer could place a order. Part of the
-      project i also worked on the graphic desing for the site including the
-      logo.
+      I worked on the authentication part of site to allow the user to log in
+      and I implemented a function cart so a customer could place an order.
+      Also, I worked on the graphic design for this site including the logo.
     </p>
   </React.Fragment>
 );
@@ -36,12 +36,12 @@ const projectCBody = (
   <React.Fragment>
     <p>
       A collection of Python projects created in my first semester of software
-      development
+      development.
     </p>
     <p>
-      Most of the programs were exercises for school but i created a couple of
-      programs on my spare time one is a CSV database system for a mock company
-      and a program can you to grade a test.
+      Most of the programs were exercises for school but I created a couple of
+      programs in my spare time, one is a CSV database system for a mock company
+      and a program that you can use to grade a test.
     </p>
   </React.Fragment>
 );
@@ -49,13 +49,13 @@ const projectDTitle = "Buisness Management";
 const projectDBody = (
   <React.Fragment>
     <p>
-      I have over 10 yeras of management expeince working in operations and
+      I have over 15 years of management expeince working in operations and
       purchasing.
     </p>
     <p>
-      While this does not count as a actually software program. I feal that
-      management work experince and knowledge will make me a great asset for
-      your team.
+      While this does not count as an actual software program, I feel that my
+      management experince and knowledge will make me a great asset for your
+      team.
     </p>
   </React.Fragment>
 );
@@ -124,7 +124,7 @@ const Projects = () => {
       {showProjectC && (
         <ProjectSummary title={projectCTitle} body={projectCBody} />
       )}
-      <div>
+      <div className={classes.block1}>
         {showProjectC && (
           <Card>
             <Outlet />
@@ -134,7 +134,7 @@ const Projects = () => {
       {showProjectD && (
         <ProjectSummary title={projectDTitle} body={projectDBody} />
       )}
-      <div>
+      <div className={classes.block1}>
         {showProjectD && (
           <Card>
             <Outlet />

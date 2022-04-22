@@ -5,18 +5,18 @@ import SmallCard from "../UI/smallCard";
 
 const introTitle = "Intro";
 const introBody =
-  "My name is Mike Wadden, i currently live in St.John's,NL. I am currently a student of the Software Development Program at Keyin Colleage. However this not my first time doing a post secondary degree. I graduated with a buisness degreee from Memorial University in 2010.";
+  "Hey there! My name is Mike Wadden, I am a student in the Software Development Program at Keyin Colleage.  I also have a Bachelor of Buisness Administration from Memorial University in 2010 and over 15 years of professional expereince in operations and business managment.  I currently live in St. John's, NL.";
 const interestTitle = "Interests";
 const interestBody =
-  "I have always had a passion for technology because one of major hobbies and passions is online gaming. Ever since i started doing the software program i also find myself working on passion projects. If you can not find me on the computer you can probabaly find me at the rink coaching my kids in hockey";
+  "I have always had a passion for technology and online gaming. Since starting the Software Development Program I have found great fulfillment working in an area that I genuinely enjoy. If you can not find me on the computer you can probabaly find me at the rink coaching my kids in hockey";
 const workTitle = "Work Experince";
 
 const workBody =
-  "After Graduating from Memorial Unversity. I went to work in the family buisness in purchasing after a few years. I was promoted to the operations manager. At that time i manged over 30 employee and was responsible for the daily running of the warehouse and trucking operations as well being the Coca Cola purchaser.\n The Coca Cola line made up over 50% of the companies total sales and working with 10 days to get new stock. Still managed to main over 95% service level. By effectively managing the work flow of the warehouse and trucking i was able to create efficeinticies that led to reducing warehouse overtime by over 50% and implemented new trucks routes that resulted in the company being able to reduce the fleet by one truck a total savings of over $70,000.";
+  "After graduating from Memorial Unversity, I worked with a local wholesale company as a Purchaser and after a few short years was promoted to Operations Manager. At that time I managed over 30 employees and was responsible for the daily running of the warehouse and trucking operations as well being the Coca Cola purchaser.\n The Coca Cola line made up over 50% of the companies total sales and I was able to achieve a 95% service level with the limitation of only a 10 day lead time to order new stock.  By effectively managing the work flow of the warehouse and trucking I created efficiencies that led to reducing warehouse overtime by over 50%. Additionally, I implemented new trucking routes that reduced the fleet by one less truck which was a total savings of over $70,000 annually.";
 
 const factsTitle = "Interesting Facts";
 const factsBody =
-  "While in university i was a member of a organazaton could SIFE. I was the VP of technology looking after the video and technacal equipment and designing the presentations for competetation teams. During the fours years i on the team we wont 3 National Championships and in 2008 we won the SIFE world Cup in Singapore.";
+  "While in university I was a member of SIFE Memorial, a volunteer organization representing students in free enterprise. I held the role of VP of Technology and was responsibile for the the video and technical equipment, as well as designing the presentations for business competition teams. During the four years I was on the team we won 3 National Championships and in 2008 we won the SIFE World Cup in Singapore.";
 const About = () => {
   return (
     <React.Fragment>

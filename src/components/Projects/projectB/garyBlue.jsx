@@ -35,10 +35,10 @@ const GaryBlue = () => {
             alt="Gary Blue's Created order Menu"
           />
           <p className={classes.blockBody}>
-            The order menu is designed to sort the menu into seclected
+            The order menu is designed to sort the menu into selected
             categories. A pick up window provides the user with the estimated
-            time their order will be ready. Items are added and remove to cart
-            by useing the add to cart checkbox.
+            time their order will be ready. Items are added and removed to cart
+            by using the add to cart checkbox.
           </p>
           <div className={classes.block}>
             <h3>Cart Design</h3>
@@ -51,9 +51,9 @@ const GaryBlue = () => {
               The cart is in modal that appears ontop of the page that the cart
               icon is clicked it has + and - buttons for the user to increase or
               decrease their order at the cart level so they do not have to go
-              backt to the order menu to changed their order. After the user
+              back to the order menu to change their order. After the user
               submits their order the user will fill out the checkout forum and
-              submit their order to the databse.
+              submit their order to the database.
             </p>
           </div>
         </div>
@@ -65,9 +65,9 @@ const GaryBlue = () => {
             alt="Gary Blue's Created order Menu"
           />
           <p className={classes.blockBody}>
-            Set up a working authnication system. Users had to create a account
-            then login in with their username and password. All user information
-            then stored on firebase system.
+            Set up a working authentication system. Users had to create an
+            account then login in with their username and password. All user
+            information then stored on firebase system.
           </p>
           <div className={classes.block}>
             <h3>Graphics</h3>

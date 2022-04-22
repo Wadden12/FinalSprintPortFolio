@@ -1,0 +1,19 @@
+.github {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  background-color: #ff6863;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.icon {
+  padding-right: 1rem;
+}
